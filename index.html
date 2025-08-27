@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service Directory</title>
 
-    <!-- tailwind cdn -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css">
 
-     <!-- daisy ui cdn -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-      
-     <!-- font awesome cdn -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600;700&family=Inter:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    
+
+<body class="bg-[#f5fff6]">
+
+    <!-- Navbar -->
+    <nav class="border-4 border-indigo-500 flex justify-between items-center px-6 py-4">
+        <!-- left side logo title -->
+        <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="logo" class="w-10 h-10">
+            <h1 class="font-hindBold text-xl text-[#006747]">Emergency <br> Service</h1>
+        </div>
+        <!-- right side heart coin copy  -->
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span id="heartCount">0</span>
+                <img src="assets/heart.png" alt="hearts" class="w-7 h-7">
+            </div>
+            <div class="flex items-center gap-2">
+                <span id="coinCount">100</span>
+                <img src="assets/coin.png" alt="coins" class="w-7 h-7">
+            </div>
+            <div>
+                <span id="copyCount">0</span> Copy
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+
+    </main>
+
 
 
     <!-- link js scripts -->
     <script src="script.js"></script>
 </body>
+
 </html>
