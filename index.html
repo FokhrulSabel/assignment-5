@@ -70,7 +70,7 @@
                     <div class="bg-[#ffe3e2] w-16 h-16 rounded-2xl flex justify-center items-center">
                         <img src="assets/emergency.png" alt="emergency" class="w-8 h-8">
                     </div>
-                    <button onclick="increaseHeart()"><i class="fa-regular fa-heart"></i></button>
+                    <button onclick="increaseHeart()" class="hover:scale-110"><i class="fa-regular fa-heart"></i></button>
                 </div>
                 <div>
                     <h2 class="font-hindBold text-lg">National Emergency Number</h2>
@@ -79,10 +79,10 @@
                     <span class="inline-block bg-[#f2f2f2] text-[#5c5c5c] text-xs px-4 py-1.5 rounded-full">All</span>
                 </div>
                 <div class="flex gap-2 mt-3">
-                    <button onclick="copyNumber('999')" class="border px-3 py-1 rounded text-sm w-full"><i
+                    <button onclick="copyNumber('999')" class="border px-3 py-1 rounded text-sm w-full hover:scale-110 cursor-pointer"><i
                             class="fa-regular fa-copy"></i>Copy</button>
                     <button onclick="callService('National Emergency Number','999')"
-                        class="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm w-full"><i
+                        class="bg-green-600 hover:bg-green-700 hover:scale-110 text-white px-3 py-1 rounded text-sm w-full"><i
                             class="fa-solid fa-phone"></i> </i>Call</button>
                 </div>
             </div>
@@ -270,7 +270,7 @@
         <div class=" bg-white shadow-md p-8 rounded-xl ">
             <div class="flex justify-between items-center mb-3">
                 <h2 class="font-interSemi text-lg"><i class="fa-regular fa-clock"></i> Call History</h2>
-                <button onclick="clearHistory()" class="py-3 px-6 bg-[#00a63e] text-white rounded-full ">Clear</button>
+                <button onclick="clearHistory()" class="py-3 px-6 bg-[#00a63e] hover:bg-green-700 text-white rounded-full ">Clear</button>
             </div>
 
             <div id="history"></div>

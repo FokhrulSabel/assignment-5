@@ -15,7 +15,7 @@ function callService(name, number) {
     alert("You are out of Coin");
     return;
   }
-  alert("Calling " + name + " (" + number + ")");
+  alert("Calling " + name + " : " + number + "");
 
   coinCount = coinCount - 20;
   document.getElementById("coinCount").innerText = coinCount;
@@ -44,4 +44,14 @@ function callService(name, number) {
 function clearHistory() {
   const historyDiv = document.getElementById("history");
   historyDiv.innerHTML = "";
+}
+
+// Copy Function 
+function copyNumber(num) {
+    navigator.clipboard.writeText(num);
+
+    alert("Number Copied : " + num);
+
+    copyCount = copyCount + 1;
+    document.getElementById("copyCount").innerText = copyCount;
 }
